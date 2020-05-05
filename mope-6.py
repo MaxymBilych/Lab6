@@ -2,6 +2,8 @@ import random
 from scipy.stats import t, f
 import numpy as np
 from itertools import product, combinations
+from datetime import datetime
+start_time = datetime.now()
 
 np.set_printoptions(formatter={'float_kind': lambda x: "%.2f" % (x)})
 
@@ -175,3 +177,5 @@ while flag_of_model is False:
     else:
         count += 1
         print("Рівняння регресії неадекватно оригіналу.")
+ 
+print("час роботи програми =", datetime.now() - start_time)     
