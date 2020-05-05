@@ -4,7 +4,7 @@ import numpy as np
 from itertools import product, combinations
 from datetime import datetime, timedelta
 start_time = datetime.now()
-for i in range(2):
+for i in range(100):
 
 
 
@@ -199,4 +199,4 @@ for i in range(2):
             print("Рівняння регресії неадекватно оригіналу.")
 
 print("Час 100 запусків програми =", datetime.now() - start_time)
-print("Середній час за 100 запусків програми =", (datetime.now() - start_time) / 2)
+print("Середній час за 100 запусків програми =", (datetime.now() - start_time) / 100)
